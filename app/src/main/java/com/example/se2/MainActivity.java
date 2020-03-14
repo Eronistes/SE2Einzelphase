@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
                         number2 = mtrklnr%10;
                         result = findGCD(number1, number2);
-                        System.out.println("Resultat ist " + result);
-                        System.out.println("Nummern sind " + number1 + " und " + number2);
                         if(result > 1) break;
                         mtrklnr = mtrklnr/10;
                         y--;
