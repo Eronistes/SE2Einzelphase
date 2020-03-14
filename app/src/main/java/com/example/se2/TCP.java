@@ -28,13 +28,10 @@ public class TCP implements Runnable {
 
         try {
             Socket clientSocket = new Socket("se2-isys.aau.at",53212);
-            DataOutputStream outUser = new DataOutputStream(clientSocket.getOutputStream());
+            DataOutputStream outUser =  new DataOutputStream(clientSocket.getOutputStream());
             BufferedReader inServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-
-            outUser.writeBytes(input + "/n");
-            System.out.println("Gesendet!");
+            outUser.writeBytes(input + "\n");
             output = inServer.readLine();
-            System.out.println(output);
             clientSocket.close();
 
         } catch (IOException e) {
