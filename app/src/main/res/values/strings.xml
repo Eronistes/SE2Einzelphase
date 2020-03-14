@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SE2</string>
+    <string name="berechnen">berechnen</string>
+    <string name="antwort_vom_server">Antwort vom Server</string>
+    <string name="abschicken">Abschicken</string>
+    <string name="eingabetext">Bitte gib deine Matrikelnummer ein:</string>
+    <string name="matrikelnummer">Matrikelnummer</string>
 </resources>
